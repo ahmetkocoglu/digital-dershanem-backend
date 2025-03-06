@@ -4,8 +4,8 @@ import User from '../models/user.model';
 export default class UserController {
     async list(req: Request, res: Response) {
         await User.create({
-            name: 'Ahmet Koçoğlu',
-            email: 'akocoglu@gmail.com',
+            name: 'Test User',
+            email: 'test@example.com',
             password: 'P@ssw0rd'
         })
         const data = await User.findOne()
